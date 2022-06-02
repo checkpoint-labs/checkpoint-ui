@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind utilities;
+
+@keyframes factory {
+  0% { background-position: 0; }
+  100% { background-position: 72px; }
+}
+
+#app {
+  @apply overflow-hidden font-serif bg-skin-bg text-skin-text antialiased;
+  height: 100%;
+  --primary-color: #384aff;
+  --bg-color: #ffffff;
+  --text-color: #606060;
+  --link-color: #000000;
+  --heading-color: #000000;
+  --border-color: #d9d9d9;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('./assets/fonts/Calibre-Medium-Custom.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('./assets/fonts/Calibre-Semibold-Custom.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.squares, .circles {
+  background-repeat: repeat-x;
+  animation: factory 0.5s infinite linear;
+  height: 64px;
+}
+
+.squares {
+  background-image: url('./assets/square.svg');
+}
+
+.circles {
+  background-image: url('./assets/circle.svg');
+}
+
+.mono {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+h1 {
+  @apply text-xl leading-tight;
+}
+
+h2 {
+  @apply text-lg;
+}
+
+h3 {
+  @apply text-md;
+}
+
+p {
+  @apply text-sm;
+}
+
+* {
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+a,
+.a {
+  color: var(--link-color);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
