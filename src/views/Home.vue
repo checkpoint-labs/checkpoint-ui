@@ -1,7 +1,10 @@
 <script setup>
 const start = 'https://docs.checkpoint.fyi/guides/quickstart';
 const docs = 'https://docs.checkpoint.fyi';
-const support = 'https://discord.gg/snapshot';
+const twitter = 'https://twitter.com/SnapshotLabs';
+const discord = 'https://discord.gg/snapshot';
+const telegram = 'https://t.me/+dk7Q7FAVJ1oyMDFl';
+const github = 'https://github.com/snapshot-labs/checkpoint';
 </script>
 <template>
   <div class="py-2 flex">
@@ -34,7 +37,7 @@ const support = 'https://discord.gg/snapshot';
               <div class="squares flex-auto mt-3" />
               <div class="w-[72px] -mx-4 relative">
                 <div
-                  class="animate-pulse-fast bg-primary w-[84px] h-[84px] rounded-full absolute"
+                  class="animate-pulse-fast opacity-90 bg-primary w-[84px] h-[84px] rounded-full absolute"
                 />
                 <div
                   class="bg-primary w-[64px] h-[64px] rounded-full absolute m-[10px]"
@@ -79,7 +82,7 @@ const support = 'https://discord.gg/snapshot';
                 <h3 class="text-white inline-block float-right">Docs</h3>
               </a>
               <a
-                :href="support"
+                :href="telegram"
                 target="_blank"
                 class="px-4 py-3 rounded-lg block bg-black"
               >
@@ -95,6 +98,7 @@ const support = 'https://discord.gg/snapshot';
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <a>Learn more</a>
                 </p>
               </div>
               <div class="text-center py-4">
@@ -112,6 +116,7 @@ const support = 'https://discord.gg/snapshot';
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <a>Learn more</a>
                 </p>
               </div>
             </div>
@@ -137,25 +142,33 @@ const support = 'https://discord.gg/snapshot';
         <div class="max-w-screen-md mx-auto px-5 overflow-hidden text-[19px]">
           <div class="py-4">
             <div class="space-x-3 float-right">
-              <img
-                src="~@/assets/twitter.svg?cb=1"
-                class="w-5 h-5 inline-block"
-              />
-              <img
-                src="~@/assets/discord.svg?cb=1"
-                class="w-5 h-5 inline-block"
-              />
-              <img
-                src="~@/assets/telegram.svg?cb=1"
-                class="w-5 h-5 inline-block"
-              />
-              <img
-                src="~@/assets/github.svg?cb=1"
-                class="w-5 h-5 inline-block"
-              />
+              <a :href="twitter" target="_blank">
+                <img
+                  src="~@/assets/twitter.svg?cb=1"
+                  class="w-[30px] h-[30px] inline-block"
+                />
+              </a>
+              <a :href="discord" target="_blank">
+                <img
+                  src="~@/assets/discord.svg?cb=1"
+                  class="w-[30px] h-[30px] inline-block"
+                />
+              </a>
+              <a :href="telegram" target="_blank">
+                <img
+                  src="~@/assets/telegram.svg?cb=1"
+                  class="w-[30px] h-[30px] inline-block"
+                />
+              </a>
+              <a :href="github" target="_blank">
+                <img
+                  src="~@/assets/github.svg?cb=1"
+                  class="w-[30px] h-[30px] inline-block"
+                />
+              </a>
             </div>
             Made with
-            <IH-heart class="text-red w-[28px] h-[28px] inline-block" /> at
+            <IH-heart class="text-red w-[28px] h-[28px] inline-block" /> by
             Snapshot Labs
           </div>
         </div>
