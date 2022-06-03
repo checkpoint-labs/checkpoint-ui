@@ -1,3 +1,3 @@
 <template>
-  <router-view :key="$route.path" class="min-h-screen" />
+  <router-view :key="$route.path" />
 </template>
