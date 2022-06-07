@@ -12,11 +12,7 @@ import { start, docs, telegram } from '@/constants.json';
       </h1>
       <div class="flex mb-5 max-w-screen-xs">
         <div class="py-[10px]">
-          <img
-            src="https://starkware.co/wp-content/uploads/2021/05/StarkNet-Icon.png"
-            width="64"
-            height="64"
-          />
+          <img src="~@/assets/starknet.png" width="64" height="64" />
         </div>
         <div class="squares flex-auto mt-3" />
         <div class="w-[72px] -mx-4 relative">
@@ -106,14 +102,10 @@ import { start, docs, telegram } from '@/constants.json';
     <div class="bg-skin-border rounded-0 md:rounded-md grid grid-cols-3">
       <div class="col-span-2 px-5 py-4">
         <h2 class="mb-2">Join the newsletter</h2>
-        <input
-          type="email"
-          class="border rounded-full py-2 px-3 text-md w-full max-w-[320px]"
-          placeholder="Your email"
-        />
+        <MailChimp />
       </div>
       <div class="text-center py-5">
-        <IH-mail class="text-primary w-[90px] h-[90px] inline-block" />
+        <IH-mail class="w-[90px] h-[90px] inline-block" />
       </div>
     </div>
   </Container>
