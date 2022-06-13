@@ -4,8 +4,13 @@ import { twitter, discord, telegram, github } from '@/constants.json';
 
 <template>
   <div class="border-t">
-    <Container class="py-4 text-[19px]">
-      <div class="space-x-3 float-right">
+    <Container class="py-4 text-[19px] text-center sm:flex">
+      <div class="sm:text-left flex-auto mb-3 sm:mb-0">
+        Made with
+        <IH-heart class="text-red w-[28px] h-[28px] inline-block" />
+        by Snapshot
+      </div>
+      <div class="space-x-3">
         <a :href="twitter" target="_blank">
           <img
             src="~@/assets/twitter.svg?cb=1"
@@ -31,9 +36,6 @@ import { twitter, discord, telegram, github } from '@/constants.json';
           />
         </a>
       </div>
-      Made with
-      <IH-heart class="text-red w-[28px] h-[28px] inline-block" /> by Snapshot
-      Labs
     </Container>
   </div>
 </template>

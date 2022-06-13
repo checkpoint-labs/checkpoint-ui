@@ -70,29 +70,41 @@ import { start, docs, telegram } from '@/constants.json';
     <div class="overflow-hidden">
       <div class="grid grid-cols-3">
         <div class="col-span-2">
-          <h2 class="mb-2">Open source</h2>
+          <h2 class="mb-2">Index StarkNet data</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <a>Learn more</a>
+            Checkpoint learns what and how to index StarkNet data based on
+            configuration parameters and user-defined JavaScript functions
+            called Data writers.
+            <a
+              target="_blank"
+              href="https://docs.checkpoint.fyi/core-concepts/checkpoint-writers"
+              class="whitespace-nowrap"
+              >Learn more</a
+            >
           </p>
         </div>
         <div class="text-center py-4">
-          <IH-globe class="text-primary w-[90px] h-[90px] inline-block" />
+          <IH-database class="text-primary w-[90px] h-[90px] inline-block" />
         </div>
       </div>
     </div>
     <div class="overflow-hidden">
       <div class="grid grid-cols-3">
         <div class="text-center py-4">
-          <IH-code class="text-primary w-[90px] h-[90px] inline-block" />
+          <IH-terminal class="text-primary w-[90px] h-[90px] inline-block" />
         </div>
         <div class="col-span-2">
-          <h2 class="mb-2">Contribute</h2>
+          <h2 class="mb-2">Query with GraphQL</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <a>Learn more</a>
+            Checkpoint exposes the stored data through a rich GraphQL API with
+            advanced filters, pagination and sorting. This makes it easier to
+            build dApp on StarkNet.
+            <a
+              target="_blank"
+              href="https://docs.checkpoint.fyi/guides/querying-data"
+              class="whitespace-nowrap"
+              >Learn more</a
+            >
           </p>
         </div>
       </div>
