@@ -33,7 +33,7 @@ import { start, docs, telegram } from '@/constants.json';
         </div>
       </div>
       <p class="text-lg">
-        Checkpoint is a library for indexing data from StarkNet events and
+        Checkpoint is a library for indexing data from Starknet events and
         making it accessible through GraphQL.
       </p>
     </div>
@@ -70,9 +70,9 @@ import { start, docs, telegram } from '@/constants.json';
     <div class="overflow-hidden">
       <div class="grid grid-cols-3">
         <div class="col-span-2">
-          <h2 class="mb-2">Index StarkNet data</h2>
+          <h2 class="mb-2">Index Starknet data</h2>
           <p>
-            Checkpoint learns what and how to index StarkNet data based on
+            Checkpoint learns what and how to index Starknet data based on
             configuration parameters and user-defined JavaScript functions
             called Data writers.
             <a
@@ -98,7 +98,7 @@ import { start, docs, telegram } from '@/constants.json';
           <p>
             Checkpoint exposes the stored data through a rich GraphQL API with
             advanced filters, pagination and sorting. This makes it easier to
-            build dApp on StarkNet.
+            build dApp on Starknet.
             <a
               target="_blank"
               href="https://docs.checkpoint.fyi/guides/querying-data"
