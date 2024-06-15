@@ -1,8 +1,8 @@
 {
-  "start": "https://docs.checkpoint.fyi/guides/quickstart",
-  "docs": "https://docs.checkpoint.fyi",
+  "start": "https://docs.checkpoint.box/guides/quickstart",
+  "docs": "https://docs.checkpoint.box",
   "twitter": "https://x.com/CheckpointLabs",
   "discord": "https://discord.gg/QJupGWJbge",
   "telegram": "https://t.me/CheckpointLabs",
-  "github": "https://github.com/snapshot-labs/checkpoint"
+  "github": "https://github.com/checkpoint-labs/checkpoint"
 }
