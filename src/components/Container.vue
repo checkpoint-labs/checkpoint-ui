@@ -4,7 +4,7 @@ defineProps({ slim: Boolean });
 <template>
   <div
     :class="slim ? 'px:0 md:px-4' : 'px-4'"
-    class="max-w-screen-md mx-auto overflow-hidden"
+    class="max-w-[890px] mx-auto overflow-hidden"
   >
     <slot />
   </div>

@@ -1,5 +1,5 @@
 <script setup>
-import { twitter, discord, telegram, github } from '@/constants.json';
+import { x, discord, telegram, github } from '@/constants.json';
 </script>
 
 <template>
@@ -11,27 +11,24 @@ import { twitter, discord, telegram, github } from '@/constants.json';
         by Snapshot
       </div>
       <div class="space-x-3">
-        <a :href="twitter" target="_blank">
-          <img
-            src="~@/assets/twitter.svg?cb=1"
-            class="w-[30px] h-[30px] inline-block"
-          />
+        <a :href="x" target="_blank">
+          <img src="~@/assets/x.svg" class="w-[30px] h-[30px] inline-block" />
         </a>
         <a :href="discord" target="_blank">
           <img
-            src="~@/assets/discord.svg?cb=1"
+            src="~@/assets/discord.svg"
             class="w-[30px] h-[30px] inline-block"
           />
         </a>
         <a :href="telegram" target="_blank">
           <img
-            src="~@/assets/telegram.svg?cb=1"
+            src="~@/assets/telegram.svg"
             class="w-[30px] h-[30px] inline-block"
           />
         </a>
         <a :href="github" target="_blank">
           <img
-            src="~@/assets/github.svg?cb=1"
+            src="~@/assets/github.svg"
             class="w-[30px] h-[30px] inline-block"
           />
         </a>

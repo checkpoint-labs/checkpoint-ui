@@ -5,12 +5,20 @@ import { start, docs, telegram } from '@/constants.json';
 <template>
   <Nav />
   <Container class="space-y-8 my-8">
-    <div class="max-w-screen-sm">
-      <h1 class="mb-7 mono">
-        From events,<br />
-        To API
-      </h1>
-      <div class="flex mb-5 max-w-screen-xs">
+    <div class="md:flex">
+      <div class="max-w-[420px] mr-4">
+        <h1 class="mb-3 mono">
+          From events,<br />
+          To API
+        </h1>
+
+        <p class="text-lg">
+          Checkpoint is a library for indexing data from Starknet events and
+          making it accessible through GraphQL.
+        </p>
+      </div>
+
+      <div class="flex flex-grow mt-7 mx-auto max-w-screen-xs">
         <div class="py-[10px]">
           <img src="~@/assets/starknet.png" width="64" height="64" />
         </div>
@@ -32,13 +40,10 @@ import { start, docs, telegram } from '@/constants.json';
           <IH-terminal class="w-[64px] h-[64px] text-skin-link" />
         </div>
       </div>
-      <p class="text-lg">
-        Checkpoint is a library for indexing data from Starknet events and
-        making it accessible through GraphQL.
-      </p>
     </div>
+
     <div class="overflow-hidden">
-      <div class="flex grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
+      <div class="flex grid md:grid-cols-3 grid-cols-1 gap-3">
         <a
           :href="start"
           target="_blank"
@@ -67,6 +72,7 @@ import { start, docs, telegram } from '@/constants.json';
         </a>
       </div>
     </div>
+
     <div class="overflow-hidden">
       <div class="grid grid-cols-3">
         <div class="col-span-2">
@@ -88,6 +94,7 @@ import { start, docs, telegram } from '@/constants.json';
         </div>
       </div>
     </div>
+
     <div class="overflow-hidden">
       <div class="grid grid-cols-3">
         <div class="text-center py-4">
@@ -110,6 +117,7 @@ import { start, docs, telegram } from '@/constants.json';
       </div>
     </div>
   </Container>
+
   <Container slim class="mb-8">
     <div class="bg-skin-border rounded-0 md:rounded-md grid grid-cols-3">
       <div class="col-span-2 px-5 py-4">
@@ -121,5 +129,6 @@ import { start, docs, telegram } from '@/constants.json';
       </div>
     </div>
   </Container>
+
   <Footer />
 </template>
